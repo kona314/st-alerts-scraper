@@ -5,7 +5,7 @@ from typing import List, Optional
 
 all_routes = ["1 Line", "T Line", "N Line", "S Line", "510", "511", "512", "513", "522", "532", "535", "540", "542", "545", "550", "554", "555", "556", "560", "566", "567", "574", "577", "578", "580", "586", "590", "592", "594", "595", "596"]
 date_format = "%b %d - %I:%M %p"
-labels_to_gtfsrt_effect = {"Reroute": "DETOUR", "Stop closure": "DETOUR", "Elevator outage": "ACCESSIBILITY_ISSUE"}
+labels_to_gtfsrt_effect = {"Reroute": "DETOUR", "Stop closure": "DETOUR", "Elevator outage": "ACCESSIBILITY_ISSUE", "Delay": "SIGNIFICANT_DELAYS"}
 
 ## Supply a filename to use stored HTML. Helpful for debugging.
 cache_file = os.environ.get('ST_ALERTS_CACHE_FILE')
